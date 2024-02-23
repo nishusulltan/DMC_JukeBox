@@ -108,9 +108,11 @@ document.addEventListener('DOMContentLoaded', function() {
             if (currentSong.paused) {
                 playAudio(currentSong);
                 playPauseIcon.className = "fa-solid fa-play"
+                console.log('Play');
             } else {
                 pauseAudio(currentSong);
                 playPauseIcon.className = "fa-solid fa-pause"
+                console.log('Pause');
             }
         }
     }

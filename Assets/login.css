@@ -48,7 +48,7 @@ body{
     margin-top: 20px;
     background-color: transparent;
     width: 420px;
-    color: bisque;
+    color: rgb(247, 208, 159);
     padding: 30px 40px;
     border: 2px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.388);
@@ -84,13 +84,14 @@ body{
 }
 
 .input-box input::placeholder{
-    color: bisque;
+    color: rgb(193, 154, 107);
     padding-left: 13px;
 
 }
 
 .input-box i{
     position: absolute;
+    color: bisque;
     left: 20px;
     top: 50%;
     transform: translateY(-50%);
@@ -111,7 +112,7 @@ body{
 }
 
 .rem-forg a{
-    color: bisque;
+    color: rgb(160, 100, 26);
     text-decoration: none;
 }
 
@@ -139,7 +140,7 @@ body{
 }
 
 .register-link p a{
-    color: bisque;
+    color: rgb(255, 193, 117);
     text-decoration: none;
     font-weight: 600;
 }
@@ -165,4 +166,20 @@ body{
 #muteIcon{
     scale: 1.5;
     color: rgb(255, 255, 255);
+}
+@media(max-width: 400px){
+    .container{
+        position: relative;
+        margin-top: 20px;
+        background-color: transparent;
+        width: 350px;
+        padding: 30px 40px;
+        border-radius: 10px;
+        backdrop-filter: blur(20px);
+    }
+    .container h1{
+        font-size: 30px;
+        text-align: center;
+        text-decoration: none;
+    }
 }

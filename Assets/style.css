@@ -140,15 +140,12 @@ header{
     border-radius: 7px;
     background-color: rgba(0, 0, 0, 0.59);
 }
-
-
 #searchList {
     list-style: none;
     padding: 0;
     margin: 0;
     cursor: pointer;
 }
-
 #searchList li {
     padding: 5px;
     border-bottom: 1px solid #ccc;
@@ -407,19 +404,85 @@ main{
     .navbar .toggle_btn{
         display: block;
     }
+    .navbar .logo a{
+        font-size: 1.7rem;
+    }
+    #searchBar{
+        width: 60px;
+        padding: 4px;
+        margin: 4px 7px;
+    }
+    #musicPlayer{
+        padding: 2px;
+    }
+    #songInfo{
+        font-size: 13px;
+    }
+    #songImage {
+        width: 35px;
+        height: 35px;
+        padding: 0;
+        margin: 0;
+    }
+    #playPauseBtn {
+        width: 20px;
+        height: 20px;
+        margin-left: 1px;
+        margin-right: 10px;
+        padding: 3px;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: .5rem;
+    }
+}
+@media(max-width: 350px){
+    #searchBar{
+        width: 53px;
+        padding: 2.5px;
+        margin: 3px 5px;
+        font-size: 12px;
+    }
+    #musicPlayer{
+        padding: 2px;
+        width: 100%;
+    }
+    #songInfo{
+        font-size: 9px;
+    }
+    #songImage {
+        width: 35px;
+        height: 35px;
+        padding: 0;
+        margin: 0;
+    }
+    #playPauseBtn {
+        width: 20px;
+        height: 20px;
+        margin-left: 1px;
+        margin-right: 10px;
+        padding: 3px;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: .5rem;
+    }
+    #loopBtn, #muteBtn {
+        width: 20px;
+        height: 20px;
+        margin: 5px;
+        padding: 5px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: .5rem;
+    }
+}
+@media(max-width: 200px){
     .dropdown_menu{
         left: 1.5rem;
         width: unset;
-    }
-}
-@media(max-width: 357px){
-    .navbar .logo a{
-        font-size: 1.7rem;
-        }
-    #searchBar{
-        width: 50px;
-        padding: 8px;
-        margin: 5px 10px;
-        font-size: 12px;
     }
 }
