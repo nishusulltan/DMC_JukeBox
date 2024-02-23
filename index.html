@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DMC JukeBox</title>
+    <link rel="stylesheet" href="Assets/style.css">
+    <script src="https://kit.fontawesome.com/24c746eda8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--<audio id="bgm" src="Assets/music/home.mp3"></audio>
+    <button id="muteBtn" onclick="toggleMute()">
+        <i id="muteIcon" class="fa-solid fa-volume-high"></i>
+    </button>-->
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">DMC JukeBox</a></div>
+            <ul class="links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Vergil</a></li>
+                <li><a href="#">Dante</a></li>
+                <li><a href="#">Nero</a></li>
+            </ul>
+            <input type="text" id="searchBar" placeholder="Search for a song...">            
+            <a href="login.html" target="_blank" class="action_btn">Login!</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div id="searchResults" class="searchDropdown">
+            <ul id="searchList"></ul>
+        </div>
+        <div class="dropdown_menu">
+          <ul>  
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Vergil</a></li>
+            <li><a href="#">Dante</a></li>
+            <li><a href="#">Nero</a></li>
+            <li><a href="login.html" class="action_btn" target="_blank">Login!</a></li>
+          </ul>
+        </div>
+        <h1 class="heading">Home to all DMC music</h1>
+    </header>
+    <main>
+        <h2 id="rec">Recommended Songs</h2>
+        <div class="rec">
+            <div class="song">
+                <p class="img-text"><img class="img" src="Assets/images/btl.jpeg" alt="BuryTheLight-img">Bury The Light</p>
+                <audio id="bgm" src="Assets/music/Bury the Light.mp3.mp3"></audio>
+            </div>
+            <div class="song">
+                <p class="img-text"><img class="img" src="Assets/images/DMC3 cover.jpg" alt="DMC3-img">Devils Never Cry</p>
+                <audio id="bgm" src="Assets/music/Devils Never Cry.mp3"></audio>
+            </div>
+            <div class="song">
+                <p class="img-text"><img class="img" src="Assets/images/DT.jpg" alt="DT-img">Devil Trigger</p>
+                <audio id="bgm" src="Assets/music/Devil Trigger.mp3"></audio>
+            </div>
+            <div class="song">
+                <p class="img-text"><img class="img" src="Assets/images/DMC4 cover.jpg" alt="DMC4-img">The Time Has Come</p>
+                <audio id="bgm" src="Assets/music/The Time Has Come.mp3"></audio>
+            </div>
+            <div class="song">
+                <p class="img-text"><img class="img" src="Assets/images/nero-dance.jpg" alt="DTlofi-img">DT lofi</p>
+                <audio id="bgm" src="Assets/music/Devil Trigger(Gallery Version).mp3"></audio>
+            </div>
+        </div>
+        <h2 id="rec">Popular Songs</h2>
+        <div class="rec">
+            <div class="song">
+                <p class="img-text"><img class="img" src="Assets/images/ceNbRIqy_400x400.jpg" alt="BuryTheLight-img">BTL(Boss Edit)</p>
+                <audio id="bgm" src="Assets/music/Bury The Light(Boss Edit).mp3"></audio>
+            </div>
+            <div class="song">
+                <p class="img-text"><img class="img" src="Assets/images/sub.jpg" alt="SubHuman-img">SubHuman</p>
+                <audio id="bgm" src="Assets/music/Subhuman.mp3"></audio>
+            </div>
+            <div class="song">
+                <p class="img-text"><img class="img" src="Assets/images/DMC3 cover.jpg" alt="DivineHate-img">Divine Hate</p>
+                <audio id="bgm" src="Assets/music/Divine Hate.mp3"></audio>
+            </div>
+            <div class="song">
+                <p class="img-text"><img class="img" src="Assets/images/fire-inside.jpg" alt="FireInside-img">Fire Inside</p>
+                <audio id="bgm" src="Assets/music/Fire Inside.mp3"></audio>
+            </div>
+            <div class="song">
+                <p class="img-text"><img class="img" src="Assets/images/DMC5 cover.jpg" alt="DTlofi-img">Voltaic Black Knight</p>
+                <audio id="bgm" src="Assets/music/Voltaic Black Knight.mp3"></audio>
+            </div>
+        </div>
+    </main>
+    <div id="musicPlayer">
+        <div id="songInfo">
+            <img id="songImage" src="" alt="Song Image">
+            <p>Now Playing~<p id="songName"></p></p>
+        </div>        
+        <div class="playerControls">
+            <button id="playPauseBtn" onclick="TogglePlayPause()">
+                <i id="playPauseIcon" class="fa-solid fa-play"></i>
+            </button>
+        </div>
+        <div id="progressContainer">
+            <div id="progressBar"></div>
+        </div>
+        <div class="playerControls">
+            <button id="muteBtn" onclick="ToggleMuteUnmute()">
+                <i id="muteIcon" class="fa-solid fa-volume-high"></i>
+            </button>
+            <button id="loopBtn" onclick="toggleLoop()">
+                <i class="fas fa-redo-alt"></i>
+            </button>
+        </div>
+    </div>
+    <script src="Assets/main.js"></script>
+</body>
+</html>
