@@ -2,10 +2,15 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'DMC5Font', sans-serif;
-    src: url(Assets/DMC5Font.ttf);
+    font-family: "dmc5font", "Open Sans", sans-serif;
 }
+@font-face {
+    font-family: 'dmc5font';
+    src: url('./dmc5font-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
+}
 body{
     display: flex;
     justify-content: center;
@@ -15,9 +20,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-
 }
-
 .header {
     background-color: rgba(255, 228, 196, 0.6);
     backdrop-filter: blur(5px);

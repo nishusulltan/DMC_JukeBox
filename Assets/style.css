@@ -4,8 +4,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "DMC5Font", "Open Sans", sans-serif;
-    src: url(Assets/DMC5Font.ttf);
+    font-family: "dmc5font", "Open Sans", sans-serif;
+}
+@font-face {
+    font-family: 'dmc5font';
+    src: url('./dmc5font-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 body{
     position: relative;
@@ -15,6 +21,7 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    font-family: "dmc5font";
 }
 li{
     list-style: none;
