@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'DMC5Font', sans-serif;
+    src: url(Assets/DMC5Font.ttf);
 }
 
 body{

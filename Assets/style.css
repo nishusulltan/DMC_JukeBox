@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "DMC5Font", "Open Sans", sans-serif;
+    src: url(Assets/DMC5Font.ttf);
 }
 body{
     position: relative;
